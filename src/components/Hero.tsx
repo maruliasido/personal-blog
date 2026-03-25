@@ -1,5 +1,6 @@
 
 import React from 'react';
+import profileImg from '../assets/profile.jpg';
 
 const Hero: React.FC = () => {
   return (
@@ -44,7 +45,7 @@ const Hero: React.FC = () => {
              <div className="absolute inset-0 bg-indigo-600 rounded-[3rem] rotate-6 opacity-5 group-hover:rotate-12 transition-transform duration-500"></div>
              <div className="absolute inset-0 bg-indigo-400 rounded-[3rem] -rotate-3 opacity-5 group-hover:-rotate-6 transition-transform duration-500"></div>
              <img 
-               src="src/assets/profile.jpg" 
+               src={profileImg}
                alt="Maruli Asido" 
                onError={(e) => {
                  (e.target as HTMLImageElement).src = "";
